@@ -58,7 +58,7 @@ class LoginViewState extends State<LoginView> {
     var uuid = Uuid();
     String id = uuid.v4();
     map['password'] = _passwordKey;
-    map['pass_key'] = id;
+    map['pass_key'] = id.substring(0, 8);
     map['is_traveller'] = true;
     model.setIsLoggedIn();
     model.setPassKey(id.substring(0, 8));
