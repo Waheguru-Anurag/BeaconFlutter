@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "680712003699",
+    "project_id": "beaconflutter-ce00c",
+    "storage_bucket": "beaconflutter-ce00c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:680712003699:android:0e71fca0f18c99ea020a06",
+        "android_client_info": {
+          "package_name": "com.anurag.beacon_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "680712003699-gs253t1nmaoan8h4kldt7lhcf3mc09ci.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiht3UzToZ4fA6mpCxZ9OoGtYkhcNTxEc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "680712003699-gs253t1nmaoan8h4kldt7lhcf3mc09ci.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "680712003699-2q9pbg0ao28ed3qhcuh1k0srjd1qd34o.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.anurag.beaconFlutter"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
