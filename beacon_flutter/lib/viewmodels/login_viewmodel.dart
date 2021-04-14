@@ -2,8 +2,7 @@ import 'package:beacon_flutter/enums/view_state.dart';
 import 'package:beacon_flutter/services/local_storage.dart';
 import 'package:beacon_flutter/services/navigation_service.dart';
 import 'package:beacon_flutter/viewmodels/base_viewmodel.dart';
-
-import '../locator.dart';
+import 'package:beacon_flutter/locator.dart';
 
 class LoginViewModel extends BaseViewModel {
   final LocalStorageService _localStorageService =

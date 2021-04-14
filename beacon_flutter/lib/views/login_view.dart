@@ -1,14 +1,13 @@
 import 'package:beacon_flutter/enums/view_state.dart';
 import 'package:beacon_flutter/viewmodels/login_viewmodel.dart';
+import 'package:beacon_flutter/views/base_view.dart';
+import 'package:beacon_flutter/views/leader/location_leader_view.dart';
 import 'package:beacon_flutter/views/traveller/location_traveller_view.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:uuid/uuid.dart';
-
-import 'base_view.dart';
-import 'leader/location_leader_view.dart';
 
 class LoginView extends StatefulWidget {
   static const String id = 'login_view_id';
@@ -122,7 +121,7 @@ class LoginViewState extends State<LoginView> {
                                         width: ScreenUtil().setWidth(1),
                                       )),
                                       labelText: 'Username'),
-                                  onTap: (){
+                                  onTap: () {
                                     setState(() {
                                       _passwordInvalid = false;
                                     });
@@ -166,7 +165,7 @@ class LoginViewState extends State<LoginView> {
                                         width: ScreenUtil().setWidth(1),
                                       )),
                                       labelText: 'Password'),
-                                  onTap: (){
+                                  onTap: () {
                                     _passwordInvalid = false;
                                   },
                                   onFieldSubmitted: (_) {
@@ -211,7 +210,7 @@ class LoginViewState extends State<LoginView> {
                                           color: Theme.of(context).primaryColor,
                                           onPressed: () async {
                                             await _firestoreLogin(model);
-                                            if(!_passwordInvalid) {
+                                            if (!_passwordInvalid) {
                                               model.setStateBusy();
                                               if (model.getTraveller() ==
                                                   true) {
@@ -248,7 +247,7 @@ class LoginViewState extends State<LoginView> {
                                           color: Theme.of(context).primaryColor,
                                           onPressed: () async {
                                             await _firestoreRegister(model);
-                                            if(!_passwordInvalid) {
+                                            if (!_passwordInvalid) {
                                               model.setStateBusy();
                                               if (model.getTraveller() ==
                                                   true) {
@@ -307,7 +306,7 @@ class LoginViewState extends State<LoginView> {
                                           width: ScreenUtil().setWidth(1),
                                         )),
                                         labelText: 'Username'),
-                                    onTap: (){
+                                    onTap: () {
                                       setState(() {
                                         _passwordInvalid = false;
                                       });
@@ -352,7 +351,7 @@ class LoginViewState extends State<LoginView> {
                                         width: ScreenUtil().setWidth(1),
                                       )),
                                       labelText: 'Password'),
-                                  onTap: (){
+                                  onTap: () {
                                     setState(() {
                                       _passwordInvalid = false;
                                     });
@@ -391,7 +390,7 @@ class LoginViewState extends State<LoginView> {
                                           color: Theme.of(context).primaryColor,
                                           onPressed: () async {
                                             await _firestoreLogin(model);
-                                            if(!_passwordInvalid) {
+                                            if (!_passwordInvalid) {
                                               model.setStateBusy();
                                               if (model.getTraveller() ==
                                                   true) {
@@ -428,7 +427,7 @@ class LoginViewState extends State<LoginView> {
                                           color: Theme.of(context).primaryColor,
                                           onPressed: () async {
                                             await _firestoreRegister(model);
-                                            if(!_passwordInvalid) {
+                                            if (!_passwordInvalid) {
                                               model.setStateBusy();
                                               if (model.getTraveller() ==
                                                   true) {

@@ -1,7 +1,7 @@
 import 'package:beacon_flutter/viewmodels/base_viewmodel.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../locator.dart';
+import 'package:beacon_flutter/locator.dart';
 
 class BaseView<T extends BaseViewModel> extends StatefulWidget {
   final Widget Function(BuildContext context, T model, Widget child) builder;

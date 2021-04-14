@@ -1,7 +1,5 @@
 import 'dart:async';
-
 import 'package:beacon_flutter/viewmodels/leader/location_leader_viewmodel.dart';
-import 'package:beacon_flutter/viewmodels/traveller/location_traveller_viewmodel.dart';
 import 'package:beacon_flutter/views/base_view.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
@@ -67,7 +65,7 @@ class LocationTravellerViewState extends State<LocationLeaderView> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        'Latitude    ${latitude}',
+                        'Latitude    $latitude',
                         style: TextStyle(
                             fontSize: ScreenUtil()
                                 .setSp(15, allowFontScalingSelf: true)),
@@ -76,7 +74,7 @@ class LocationTravellerViewState extends State<LocationLeaderView> {
                         height: ScreenUtil().setHeight(10),
                       ),
                       Text(
-                        'Longitude    ${longitude}',
+                        'Longitude    $longitude',
                         style: TextStyle(
                             fontSize: ScreenUtil()
                                 .setSp(15, allowFontScalingSelf: true)),
